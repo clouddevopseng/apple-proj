@@ -9,6 +9,6 @@ node {
     }
     stage('Deployment') 
     {
-    deploy adapters: [tomcat9(credentialsId: 'id', path: '', url: 'http://172.31.7.145:8080')], contextPath: '/release-env', war: '**/*.war'
+    deploy adapters: [tomcat9(credentialsId: 'id', path: '', url: 'http://172.31.7.145:8080')], contextPath: '/release-env-NEW', war: '**/*.war'
     }
 }
